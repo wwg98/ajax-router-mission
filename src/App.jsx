@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     let alive = true;
 
-    fetch(`${import.meta.env.BASE.URL}/data/blog.json`)
+    fetch(`${import.meta.env.BASE_URL}data/blog.json`)
       .then(res => res.json())
       .then(result => {
         if (alive) {
